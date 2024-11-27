@@ -1,0 +1,78 @@
+.poppins {
+font-family: "Poppins", sans-serif;
+}
+
+.roboto {
+font-family: "Roboto", sans-serif;
+}
+
+.bg-navbar {
+    background-color: rgba(240, 248, 255, 0.4); 
+    transition: opacity 0.5s ease; /
+}
+
+.wave-background {
+    height: auto; 
+    background: linear-gradient(135deg, #00aaff, #ff7f7f); 
+}
+
+#scroll-container {
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+
+/* Accordition */
+.accordion{
+    --bs-accordion-border-radius: 0px !important;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem !important;
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-border-color: none !important;
+}
+
+.accordion-button {
+    background-color: rgba(240, 248, 255, 0.4) !important; 
+    transition: opacity 0.5s ease; 
+    height: 10vh;
+}
+
+.accordion-item {
+    background-color: rgba(240, 248, 255, 0.4) !important; 
+    transition: opacity 0.5s ease; /
+}
